@@ -1,0 +1,20 @@
+{
+  "document_path": "/Users/riwadesai/Downloads/Research Nirdeshika.pdf",
+  "language": "bn",
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "id": "chunk_0",
+      "content": "Error extracting text from PDF /Users/riwadesai/Downloads/Research Nirdeshika.pdf: 'PdfPipelineOptions' object has no attribute 'backend'",
+      "language": "bn",
+      "chunk_index": 0,
+      "chunk_size": 137,
+      "metadata": {
+        "source": "document",
+        "language": "bn",
+        "chunk_type": "text"
+      }
+    }
+  ],
+  "created_at": "/Users/riwadesai/Multilingual_ChatBot/training"
+}

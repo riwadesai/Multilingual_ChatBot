@@ -1,0 +1,20 @@
+{
+  "document_path": "../data/sample.txt",
+  "language": "en",
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "id": "chunk_0",
+      "content": "Sample text content from ../data/sample.txt",
+      "language": "en",
+      "chunk_index": 0
+    },
+    {
+      "id": "chunk_1",
+      "content": "This is a placeholder for the actual document parsing implementation.",
+      "language": "en",
+      "chunk_index": 1
+    }
+  ],
+  "created_at": "/Users/riwadesai/Multilingual_ChatBot/training"
+}
