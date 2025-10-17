@@ -41,14 +41,6 @@ Query → Embedding → Vector Search → MMR → Keyword Search
 Deduplication → LLM Reranking → Answer Generation → Response
 ```
 
-## 📊 Performance Metrics
-
-| Metric | Value | Status |
-|--------|-------|--------|
-| **Response Time** | 37s average | ✅ Good |
-| **Memory Usage** | 6GB peak | ⚠️ High |
-| **Accuracy** | 85% (top-3) | ✅ Excellent |
-| **Languages** | 4 supported | ✅ Complete |
 
 ## 📚 Documentation
 
