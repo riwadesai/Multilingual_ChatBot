@@ -8,8 +8,29 @@
 - Python 3.8 or higher
 - 8GB+ RAM (16GB recommended)
 - Internet connection for model downloads
+- Tesseract OCR with language packs
 
-#### Installation
+#### System Dependencies
+
+**Install Tesseract OCR:**
+
+**Basic Installation:**
+- **Windows**: Download from [Tesseract for Windows](https://github.com/UB-Mannheim/tesseract/wiki)
+- **macOS**: `brew install tesseract`
+- **Linux**: `sudo apt-get install tesseract-ocr`
+
+**Install All Languages (Recommended):**
+- **Windows**: Download installer with all language packs from [Tesseract for Windows](https://github.com/UB-Mannheim/tesseract/wiki)
+- **macOS**: `brew install tesseract --with-all-languages`
+- **Linux (Ubuntu/Debian)**: `sudo apt-get install tesseract-ocr-all`
+- **Linux (CentOS/RHEL/Fedora)**: `sudo dnf install tesseract-langpack-*`
+
+**Verify Tesseract Installation:**
+```bash
+tesseract --list-langs
+```
+
+#### Python Dependencies Installation
 ```bash
 # Clone the repository
 git clone <repository-url>
@@ -226,12 +247,6 @@ python prediction/index.py 2>&1 | tee system.log
 # Monitor memory usage
 watch -n 1 'ps aux | grep python'
 ```
-
-#### 9.2 Performance Metrics
-- **Query Processing**: ~35 seconds total
-- **Memory Usage**: ~4GB peak
-- **Model Loading**: ~30 seconds (first run)
-- **Cache Hit**: ~5 seconds (subsequent runs)
 
 ### 10. Backup and Recovery
 
