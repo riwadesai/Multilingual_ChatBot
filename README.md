@@ -21,12 +21,6 @@ python prediction/index.py
 
 ## 📋 System Overview
 
-### Supported Languages
-- 🇮🇳 **Hindi** (hin) - Active
-- 🇧🇩 **Bengali** (ben) - Active  
-- 🇨🇳 **Chinese** (chi_sim) - Active
-- 🇺🇸 **English** (en) - Active
-
 ### Core Features
 - **Hybrid Search**: Vector similarity + keyword matching
 - **LLM Reranking**: Gemma-2B powered relevance scoring
@@ -40,7 +34,6 @@ Query → Embedding → Vector Search → MMR → Keyword Search
   ↓
 Deduplication → LLM Reranking → Answer Generation → Response
 ```
-
 
 ## 📚 Documentation
 
@@ -56,10 +49,31 @@ Deduplication → LLM Reranking → Answer Generation → Response
 - **RAM**: 8GB minimum (16GB recommended)
 - **Storage**: 10GB for models and data
 - **Internet**: For model downloads
+- **Tesseract OCR**: Required for PDF text extraction
 
 ## 🚀 Getting Started
 
-### 1. Install Dependencies
+### 1. Install System Dependencies
+
+#### Install Tesseract OCR:
+
+**Basic Installation:**
+- **Windows**: Download from [Tesseract for Windows](https://github.com/UB-Mannheim/tesseract/wiki)
+- **macOS**: `brew install tesseract`
+- **Linux**: `sudo apt-get install tesseract-ocr`
+
+**Install All Languages (Recommended):**
+- **Windows**: Download installer with all language packs from [Tesseract for Windows](https://github.com/UB-Mannheim/tesseract/wiki)
+- **macOS**: `brew install tesseract --with-all-languages`
+- **Linux (Ubuntu/Debian)**: `sudo apt-get install tesseract-ocr-all`
+- **Linux (CentOS/RHEL/Fedora)**: `sudo dnf install tesseract-langpack-*`
+
+**Verify Installation:**
+```bash
+tesseract --list-langs
+```
+
+#### Install Python Dependencies:
 ```bash
 pip install -r requirements.txt
 ```
@@ -183,4 +197,3 @@ Multilingual_ChatBot/
 - ✅ Automatic resource cleanup
 - ✅ Efficient tensor operations
 - ✅ Singleton pattern implementation
-
